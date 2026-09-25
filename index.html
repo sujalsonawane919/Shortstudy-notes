@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Study Notes | 11th Science</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    background: linear-gradient(-45deg, #07111f, #102a43, #173b7a, #0b1728);
+    background-size: 400% 400%;
+    animation: backgroundMove 12s ease infinite;
+    min-height: 100vh;
+}
+
+/* Animated background */
+@keyframes backgroundMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Header animation */
+header {
+    text-align: center;
+    padding: 45px 15px;
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+    text-shadow: 0 0 15px rgba(255,255,255,0.5);
+}
+
+header p {
+    font-size: 17px;
+    opacity: 0.9;
+}
+
+/* Main container */
+.container {
+    max-width: 700px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Card animation */
+.card {
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(0,0,0,0.35);
+
+    animation: cardAppear 1.2s ease;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+@keyframes cardAppear {
+    from {
+        opacity: 0;
+        transform: scale(0.85) translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.card:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 15px 45px rgba(0,0,0,0.5);
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 27px;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* Buttons */
+.button {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+
+    padding: 14px;
+    margin-top: 15px;
+
+    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+
+    font-weight: bold;
+
+    transition: all 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background: rgba(255,255,255,0.25);
+    box-shadow: 0 0 20px rgba(255,255,255,0.25);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px 10px;
+    margin-top: 20px;
+    opacity: 0.75;
+    animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.75; }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>📚 Study Notes</h1>
+    <p>11th Science • Biology</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+
+        <h2>🧬 Biology</h2>
+
+        <p>
+            <b>Chapter 10 – Animal Tissues</b>
+        </p>
+
+        <p>
+            Question-wise exercise answers for
+            Class 11 Biology.
+        </p>
+
+        <a class="button"
+           href="Animal_Tissues_Exercise_Answers.pdf"
+           target="_blank">
+           📄 View PDF
+        </a>
+
+        <a class="button"
+           href="Animal_Tissues_Exercise_Answers.pdf"
+           download>
+           ⬇️ Download PDF
+        </a>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Study Notes | 11th Science
+</footer>
+
+</body>
+  </html>
